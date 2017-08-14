@@ -23,7 +23,8 @@ namespace Fiap.Exemplo01.mvc.Controllers
             ViewBag.nomeAluno = aluno.Nome;
             ViewBag.dataAluno = aluno.DtNascimento;
             ViewBag.salarioAluno = aluno.Salario;
-            return View();
+            TempData["mensagem"] = "Cadastrado com sucesso!";
+            return View(aluno);
            
         }
 
