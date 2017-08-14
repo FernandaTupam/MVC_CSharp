@@ -1,0 +1,26 @@
+﻿
+@{
+    ViewBag.Title = "Cadastro";
+}
+
+<h2>Cadastro</h2>
+
+<div>
+    <form method="post" action="~/Aluno/Salvar">
+        <div class="form-group">
+            <label  for="nome">Nome:</label>
+            <input type="text" name="Nome" id="id-nome" class="form-control" />
+        </div>
+
+        <div class="form-group">
+            <label for="dtNascimento">Data de Nascimento</label>
+            <input name="DtNascimento" type="datetime" id="id-dtNascimento" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label for="salario">Salário</label>
+            <input type="number" name="Salario"  id="id-salario" class="form-control" />
+        </div>
+            <input type="submit" name="Salvar" class="btn btn-primary" />
+
+</form>
+</div>
